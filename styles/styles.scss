@@ -1,3 +1,38 @@
-h1 {
-  color: red;
+.container {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  background-color: black;
+  align-items: center;
+  justify-content: center;
+  form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 80%;
+    height: 50%;
+    background-color: white;
+    border-radius: 5px;
+    div{
+      width: 90%;
+      button{
+        display: flex;
+        align-items: center;
+        width: 100%; 
+        padding: 10px;
+        border-radius: 5px;
+        color: white;
+        background-color: #0096FC;
+        font-weight: 500;
+        font-size: 20px;
+        img{
+          margin-right: 10px;
+        }
+      }
+      button+button{
+        margin-top: 35px;
+      }
+    }
+  }
 }
