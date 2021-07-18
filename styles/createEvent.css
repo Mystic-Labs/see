@@ -23,6 +23,7 @@ html, body {
   padding: 15px;
   width: 75%;
   height: 70%;
+  border-radius: 5px;
 }
 
 .container form div {
