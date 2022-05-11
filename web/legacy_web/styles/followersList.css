@@ -1,0 +1,70 @@
+html,
+body {
+  margin: 0px;
+  height: 100%;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: black;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.container .following {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  padding: 10px;
+}
+
+.container .following .circle {
+  width: 50px;
+  height: 50px;
+  margin-left: 10px;
+  background-color: grey;
+  border-radius: 50%;
+}
+
+.container .following .nome {
+  margin-left: 15px;
+}
+
+.container .following .unfollow {
+  margin-left: auto;
+  margin-right: 10px;
+  width: 50px;
+  height: 50px;
+}
+
+.container .following .unfollow img {
+  width: 100%;
+  height: 100%;
+}
+
+.container hr {
+  width: 100%;
+  margin: 0;
+}
+
+p {
+  color: white;
+}
+/*# sourceMappingURL=followersList.css.map */
