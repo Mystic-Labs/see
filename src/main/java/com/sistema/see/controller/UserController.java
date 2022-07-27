@@ -13,6 +13,7 @@ import java.util.List;
 public class UserController {
     @Autowired
     private UserRepository usuario;
+
     @RequestMapping(value = "/api/usuario", method = RequestMethod.GET)
     public List<User> Get() {
         return usuario.findAll();

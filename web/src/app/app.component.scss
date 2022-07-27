@@ -5,7 +5,8 @@
   background-color: black;
   align-items: center;
   justify-content: center;
-  form{
+
+  form {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -14,9 +15,11 @@
     height: 50%;
     background-color: white;
     border-radius: 5px;
-    div{
+
+    div {
       width: 90%;
-      button{
+
+      button {
         display: flex;
         align-items: center;
         width: 100%;
@@ -26,11 +29,13 @@
         background-color: #0096FC;
         font-weight: 500;
         font-size: 20px;
-        img{
+
+        img {
           margin-right: 10px;
         }
       }
-      button+button{
+
+      button + button {
         margin-top: 35px;
       }
     }

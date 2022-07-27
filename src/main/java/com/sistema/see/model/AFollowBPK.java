@@ -1,12 +1,12 @@
 package com.sistema.see.model;
 
-import lombok.*;
+import lombok.Getter;
+import lombok.Setter;
 import org.hibernate.Hibernate;
 
 import javax.persistence.Column;
 import javax.persistence.Embeddable;
 import java.io.Serializable;
-import java.util.Objects;
 
 @Getter
 @Setter
@@ -17,14 +17,16 @@ public class AFollowBPK implements Serializable {
     @Column(name = "user_b")
     private int userB;
 
-
     @Override
     public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || Hibernate.getClass(this) != Hibernate.getClass(o)) return false;
+        if (this == o)
+            return true;
+        if (o == null || Hibernate.getClass(this) != Hibernate.getClass(o))
+            return false;
         AFollowBPK that = (AFollowBPK) o;
 
-        if (userA != that.userA) return false;
+        if (userA != that.userA)
+            return false;
         return userB == that.userB;
     }
 

@@ -6,6 +6,7 @@ import lombok.Setter;
 import javax.persistence.*;
 import java.sql.Date;
 import java.util.Objects;
+
 @Getter
 @Setter
 @Entity
@@ -28,10 +29,13 @@ public class EventChoice {
 
     @Override
     public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
+        if (this == o)
+            return true;
+        if (o == null || getClass() != o.getClass())
+            return false;
         EventChoice that = (EventChoice) o;
-        return idUser_Fk == that.idUser_Fk && idEvent_Fk == that.idEvent_Fk && Objects.equals(fim, that.fim) && Objects.equals(inicio, that.inicio) && Objects.equals(voteDate, that.voteDate);
+        return idUser_Fk == that.idUser_Fk && idEvent_Fk == that.idEvent_Fk && Objects.equals(fim, that.fim) && Objects.equals(inicio, that.inicio)
+                && Objects.equals(voteDate, that.voteDate);
     }
 
     @Override
